@@ -237,4 +237,187 @@ export const languageBlurbs = {
     "Together they let you automate across any operating system. " +
     "Essential for sysadmins and DevOps engineers managing mixed infrastructure."
 
+},
+    ,
+
+  "HTML + CSS + JavaScript":
+    "HTML, CSS, and JavaScript are the core building blocks of the web. " +
+    "They let you create layouts, style them beautifully, and add interactivity directly in the browser. " +
+    "Every modern web framework is built on top of these fundamentals.",
+
+  "JavaScript (React)":
+    "React is the most popular JavaScript library for building modern UIs. " +
+    "Its component-based model makes it easy to break complex interfaces into reusable pieces. " +
+    "Mastering React opens the door to countless frontend and fullstack roles.",
+
+  "TypeScript (Next.js)":
+    "Next.js with TypeScript gives you a powerful fullstack React framework. " +
+    "You get server-side rendering, API routes, and static generation, all with type safety. " +
+    "A top choice for production-grade web apps and SaaS products.",
+
+  "Python (Django)":
+    "Django is a batteries-included web framework for Python. " +
+    "It ships with authentication, admin dashboards, an ORM, and strong security defaults. " +
+    "Ideal when you want to move quickly from idea to complete web application.",
+
+  "TypeScript (Next.js + Edge / Server Components)":
+    "Using Next.js with Edge functions and React Server Components pushes performance to the next level. " +
+    "Your app can render closer to users, reduce JavaScript sent to the browser, and feel extremely snappy. " +
+    "Perfect for high-traffic, UX-sensitive web products.",
+
+  "TypeScript (fullstack)":
+    "A fullstack TypeScript setup lets you share types between frontend and backend. " +
+    "This reduces bugs caused by mismatched contracts and improves refactor safety. " +
+    "It's a favorite choice for teams building long-lived web platforms.",
+
+  "JavaScript (React + Node.js)":
+    "Using React on the frontend and Node.js on the backend means one language across your entire stack. " +
+    "This simplifies hiring, learning, and code sharing between client and server. " +
+    "A proven combination for freelancers and startups alike.",
+
+  "Astro (JavaScript/TypeScript)":
+    "Astro is optimized for content-heavy, blazing-fast websites. " +
+    "It ships minimal JavaScript by default and lets you bring in React, Vue, or Svelte only where needed. " +
+    "Great for blogs, marketing sites, and documentation portals.",
+
+  "Flutter (Dart)":
+    "Flutter uses Dart to build beautiful, high-performance apps for mobile, web, and desktop from a single codebase. " +
+    "Its widget system and hot-reload make iterating on UI fast and enjoyable. " +
+    "Excellent when you want one codebase for both Android and iOS.",
+
+  "Kotlin (Android)":
+    "Kotlin is the modern, first-class language for Android development. " +
+    "It reduces boilerplate compared to Java and integrates seamlessly with existing Android APIs. " +
+    "If you're targeting Android specifically, Kotlin is the best place to start.",
+
+  "React Native":
+    "React Native lets you build native-feeling mobile apps using JavaScript and React. " +
+    "You can reuse much of your web knowledge while still getting access to native modules. " +
+    "A strong option for teams with existing React experience.",
+
+  "React Native (Expo)":
+    "Expo sits on top of React Native to simplify setup, builds, and over-the-air updates. " +
+    "It removes much of the native configuration pain so you can focus on writing app logic. " +
+    "Great for prototypes, startups, and small teams.",
+
+  "Swift (SwiftUI)":
+    "SwiftUI is Apple's modern declarative UI framework for iOS and macOS apps. " +
+    "Combined with Swift, it makes building complex native interfaces far more approachable. " +
+    "The recommended way to build new apps for the Apple ecosystem.",
+
+  "Kotlin (Jetpack Compose)":
+    "Jetpack Compose is Google's modern toolkit for building native Android UIs in Kotlin. " +
+    "It uses a declarative approach similar to React or SwiftUI, which simplifies state-driven UIs. " +
+    "A must-learn for modern Android development.",
+
+  "Godot (GDScript)":
+    "Godot with GDScript is a lightweight, open-source engine perfect for 2D and simple 3D games. " +
+    "GDScript feels very similar to Python, which keeps the learning curve gentle. " +
+    "Ideal for beginners and indie developers who want full engine access without licensing worries.",
+
+  "Unity (Bolt/Visual Scripting)":
+    "Unity's visual scripting tools let you create gameplay logic by connecting nodes instead of writing code. " +
+    "It's perfect for designers and artists who want to prototype ideas without deep programming experience. " +
+    "You can always switch to or mix in C# later as you grow.",
+
+  "Godot (C# or GDScript)":
+    "Godot supports both its native GDScript and C# for scripting game logic. " +
+    "This flexibility lets you start simple with GDScript and gradually adopt C# for larger projects. " +
+    "A strong choice for indie teams who value openness and control.",
+
+  "C++ (custom engine or Unreal)":
+    "C++ is the traditional language of high-performance game engines. " +
+    "Whether you're extending Unreal or building custom tech, it gives you precise control over memory and performance. " +
+    "Best suited for experienced developers targeting demanding 3D experiences.",
+
+  "JavaScript (Phaser)":
+    "Phaser is a popular JavaScript framework for making 2D browser games. " +
+    "You can run your creations anywhere a modern browser exists without extra installs. " +
+    "Great for jams, educational games, and quick experiments.",
+
+  Godot:
+    "Godot is a fully open-source game engine that supports 2D and 3D projects. " +
+    "It has a lightweight editor, scene-based architecture, and friendly community. " +
+    "Perfect for indie developers who want freedom and fast iteration.",
+
+  "Python (pandas + scikit-learn)":
+    "Python with pandas and scikit-learn covers a huge portion of practical machine learning. " +
+    "You can clean data, engineer features, and train classical models with concise, readable code. " +
+    "Excellent for people who want real ML results without diving deep into neural networks yet.",
+
+  "Python (PyTorch)":
+    "PyTorch is the go-to deep learning framework for research and many production systems. " +
+    "Its dynamic computation graphs feel very natural in Python and make debugging easier. " +
+    "A top choice for building and experimenting with neural networks.",
+
+  "Python (pandas + SQL)":
+    "Combining pandas with SQL lets you move fluidly between databases and in-memory analysis. " +
+    "You can pull data with SQL, then reshape and visualize it in Python. " +
+    "A powerful combo for analytics and business intelligence work.",
+
+  "Python (PyTorch + JAX)":
+    "Using both PyTorch and JAX gives you flexibility across research and high-performance experimentation. " +
+    "PyTorch is great for iterative model building, while JAX shines for functional-style, highly optimized computations. " +
+    "Together they cover most cutting-edge deep learning workflows.",
+
+  "Python (pandas) + SQL":
+    "Python with pandas plus strong SQL skills is a classic data analyst toolkit. " +
+    "SQL handles aggregations and joins in the database, while pandas lets you fine-tune analyses and plots. " +
+    "Ideal for dashboards, ad-hoc reports, and decision support.",
+
+  "Python (Airflow / DBT)":
+    "Airflow and DBT sit at the heart of many modern data engineering stacks. " +
+    "Airflow handles scheduling and orchestration, while DBT manages transformations as code. " +
+    "Python is the glue that ties these tools and your data warehouse together.",
+
+  "Scala (Spark) or Python (PySpark)":
+    "Spark can be used with both Scala and Python, letting you process massive datasets on clusters. " +
+    "Scala offers tight integration and performance, while PySpark lets Python users tap into Spark's power. " +
+    "The standard choice for large-scale ETL and analytics.",
+
+  "Rust (Polars)":
+    "Polars is a lightning-fast DataFrame library written in Rust with bindings for multiple languages. " +
+    "It can outperform traditional pandas workloads by a large margin, especially on larger datasets. " +
+    "Great when you need analytics that push single-machine performance limits.",
+
+  PowerShell:
+    "PowerShell is a powerful scripting language and shell built into Windows. " +
+    "It treats system data as objects, which makes manipulating the registry, services, and files very ergonomic. " +
+    "A must-have skill for Windows administrators and power users.",
+
+  "Python (Selenium / Playwright)":
+    "Selenium and Playwright let Python scripts control real browsers programmatically. " +
+    "You can automate logins, form submissions, and scraping tasks that would be tedious by hand. " +
+    "Perfect for QA automation and small personal productivity tools.",
+
+  "C (RTOS)":
+    "C with a real-time operating system (RTOS) is the backbone of many embedded and robotics applications. " +
+    "It gives you deterministic timing and fine control over hardware resources. " +
+    "Critical when missed deadlines can cause physical errors or safety issues.",
+
+  "Rust (embedded)":
+    "Rust on embedded devices brings memory safety guarantees to low-level programming. " +
+    "It helps prevent common vulnerabilities like buffer overflows without sacrificing performance. " +
+    "An emerging favorite for safety-critical firmware and IoT systems.",
+
+  "Arduino (C++)":
+    "Arduino uses a simplified C++ environment tailored for microcontrollers. " +
+    "Its huge ecosystem of boards, sensors, and example code makes hardware hacking very accessible. " +
+    "Ideal for hobby projects, education, and quick IoT prototypes.",
+
+  "MicroPython (ESP32 / Raspberry Pi Pico)":
+    "MicroPython on boards like the ESP32 and Raspberry Pi Pico lets you control hardware with Python. " +
+    "You can read sensors, drive motors, and connect to Wi‑Fi with very little code. " +
+    "Perfect for beginners building their first IoT gadgets.",
+
+  "Python (Raspberry Pi)":
+    "Python on Raspberry Pi gives you a full Linux computer that can interact with the physical world. " +
+    "You can run web servers, connect to sensors, and control electronics from one small board. " +
+    "Great for home automation, robotics, and learning hardware.",
+
+  "Python (Raspberry Pi) + MQTT":
+    "Using Python on Raspberry Pi with MQTT turns it into a powerful IoT gateway. " +
+    "It can collect sensor data locally and publish it reliably to cloud services. " +
+    "A strong architecture for scalable, message-driven IoT systems."
+
 };
