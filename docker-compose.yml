@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   codepick-app:
     build:
