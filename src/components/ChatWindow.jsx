@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import MessageBubble from './MessageBubble';
 import QuickReplyButtons from './QuickReplyButtons';
-import logoSvg from '/logo.svg';
+const logoSvg = `${import.meta.env.BASE_URL}logo.svg`;
 
 function ChatWindow({ messages, isTyping, onQuickReply }) {
   const bottomRef = useRef(null);

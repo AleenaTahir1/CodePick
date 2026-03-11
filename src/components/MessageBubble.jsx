@@ -1,4 +1,4 @@
-import logoSvg from '/logo.svg';
+const logoSvg = `${import.meta.env.BASE_URL}logo.svg`;
 
 function MessageBubble({ text, sender }) {
   const isBot = sender === 'bot';
