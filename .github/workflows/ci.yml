@@ -32,7 +32,7 @@ jobs:
         run: npm run build
 
       - name: Build Docker image
-        run: docker build -t codepick-app .
+        run: docker build -f docker/Dockerfile -t codepick-app .
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
