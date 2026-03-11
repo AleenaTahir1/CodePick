@@ -235,10 +235,7 @@ export const languageBlurbs = {
   "Bash + PowerShell":
     "Combining Bash and PowerShell covers both Unix and Windows environments. " +
     "Together they let you automate across any operating system. " +
-    "Essential for sysadmins and DevOps engineers managing mixed infrastructure."
-
-},
-    ,
+    "Essential for sysadmins and DevOps engineers managing mixed infrastructure." ,
 
   "HTML + CSS + JavaScript":
     "HTML, CSS, and JavaScript are the core building blocks of the web. " +
