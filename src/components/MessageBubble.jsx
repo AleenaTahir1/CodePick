@@ -4,7 +4,7 @@ function MessageBubble({ text, sender }) {
   return (
     <div className={`flex ${isBot ? 'justify-start' : 'justify-end'} mb-3 message-enter`}>
       {isBot && (
-        <img src="/logo.svg" alt="CodePick" className="flex-shrink-0 w-7 h-7 mr-2 mt-0.5" />
+        <img src="/logo.svg" alt="CodePick" className="flex-shrink-0 w-6 h-6 rounded mr-2 mt-0.5" />
       )}
 
       <div

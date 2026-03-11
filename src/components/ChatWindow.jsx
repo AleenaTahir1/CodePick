@@ -18,9 +18,12 @@ function ChatWindow({ messages, isTyping, onQuickReply }) {
   return (
     <div className="flex flex-col h-full">
       {/* Header */}
-      <div className="flex items-center gap-3 px-5 py-4 border-b flex-shrink-0"
+      <div className="flex items-center gap-3.5 px-5 py-4 border-b flex-shrink-0"
            style={{ background: 'var(--bg-header)', borderColor: 'var(--border)' }}>
-        <img src="/logo.svg" alt="CodePick" className="w-9 h-9" />
+        <div className="relative flex-shrink-0">
+          <img src="/logo.svg" alt="CodePick" className="w-7 h-7 rounded-md"
+               style={{ filter: 'drop-shadow(0 0 5px rgba(219, 39, 119, 0.3))' }} />
+        </div>
         <div>
           <h1 className="text-[15px] font-semibold" style={{ color: '#f0e6f6' }}>
             CodePick
@@ -51,7 +54,7 @@ function ChatWindow({ messages, isTyping, onQuickReply }) {
 
         {isTyping && (
           <div className="flex items-start mb-3 message-enter">
-            <img src="/logo.svg" alt="CodePick" className="flex-shrink-0 w-7 h-7 mr-2 mt-0.5" />
+            <img src="/logo.svg" alt="CodePick" className="flex-shrink-0 w-6 h-6 rounded mr-2 mt-0.5" />
             <div className="rounded-2xl rounded-tl-md px-4 py-3"
                  style={{ background: 'var(--bg-bot)', border: '1px solid var(--border)' }}>
               <div className="flex items-center gap-1.5">

@@ -1,48 +1,27 @@
-import { useState, useCallback, useEffect } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import ChatWindow from './components/ChatWindow';
 import InputBar from './components/InputBar';
+import { processMessage, createInitialState } from './engine/chatEngine';
+import { greeting } from './engine/responses';
 
 let messageId = 0;
 const nextId = () => ++messageId;
 
-const GREETING = {
-  text:
-    "Hi, I'm CodePick \u2014 your personal programming language advisor.\n\n" +
-    "Answer a few quick questions and I'll recommend the best language for your project.\n\n" +
-    "What do you want to build?",
-  quickReplies: [
-    "Website / Web App",
-    "Mobile App",
-    "Game",
-    "Data Science / AI",
-    "Automation / Scripting",
-    "Embedded / IoT",
-    "Desktop App",
-    "API / Backend",
-  ],
-};
-
-/**
- * Integration point for Aleena:
- * Replace the placeholder `getBotReply` with the real engine call:
- *   import { processMessage } from './engine/chatEngine';
- * Then in handleSend, call processMessage(userInput, currentState)
- * and use { botReply, newState, quickReplies } from the result.
- */
-
 function App() {
   const [messages, setMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
+  const stateRef = useRef(createInitialState());
 
+  // Show greeting on mount
   useEffect(() => {
     setIsTyping(true);
     const timer = setTimeout(() => {
       setMessages([
         {
           id: nextId(),
-          text: GREETING.text,
+          text: greeting.message,
           sender: 'bot',
-          quickReplies: GREETING.quickReplies,
+          quickReplies: greeting.quickReplies,
         },
       ]);
       setIsTyping(false);
@@ -63,17 +42,20 @@ function App() {
 
   const handleSend = useCallback(
     (text) => {
+      // Add user message
       setMessages((prev) => [
         ...prev,
         { id: nextId(), text, sender: 'user', quickReplies: [] },
       ]);
 
-      addBotReply(
-        "Thanks for your input! The rule engine isn't connected yet \u2014 " +
-          "once Aleena integrates chatEngine.js, I'll give you a personalized " +
-          "language recommendation right here.",
-        GREETING.quickReplies,
+      // Process through chatEngine
+      const { botReply, newState, quickReplies } = processMessage(
+        text,
+        stateRef.current
       );
+      stateRef.current = newState;
+
+      addBotReply(botReply, quickReplies);
     },
     [addBotReply],
   );
