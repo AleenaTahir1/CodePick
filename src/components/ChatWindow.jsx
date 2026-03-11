@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import MessageBubble from './MessageBubble';
 import QuickReplyButtons from './QuickReplyButtons';
+import logoSvg from '/logo.svg';
 
 function ChatWindow({ messages, isTyping, onQuickReply }) {
   const bottomRef = useRef(null);
@@ -21,7 +22,7 @@ function ChatWindow({ messages, isTyping, onQuickReply }) {
       <div className="flex items-center gap-3.5 px-5 py-4 border-b flex-shrink-0"
            style={{ background: 'var(--bg-header)', borderColor: 'var(--border)' }}>
         <div className="relative flex-shrink-0">
-          <img src="/logo.svg" alt="CodePick" className="w-7 h-7 rounded-md"
+          <img src={logoSvg} alt="CodePick" className="w-7 h-7 rounded-md"
                style={{ filter: 'drop-shadow(0 0 5px rgba(219, 39, 119, 0.3))' }} />
         </div>
         <div>
@@ -54,7 +55,7 @@ function ChatWindow({ messages, isTyping, onQuickReply }) {
 
         {isTyping && (
           <div className="flex items-start mb-3 message-enter">
-            <img src="/logo.svg" alt="CodePick" className="flex-shrink-0 w-6 h-6 rounded mr-2 mt-0.5" />
+            <img src={logoSvg} alt="CodePick" className="flex-shrink-0 w-6 h-6 rounded mr-2 mt-0.5" />
             <div className="rounded-2xl rounded-tl-md px-4 py-3"
                  style={{ background: 'var(--bg-bot)', border: '1px solid var(--border)' }}>
               <div className="flex items-center gap-1.5">
