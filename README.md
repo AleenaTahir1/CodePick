@@ -8,18 +8,12 @@
 
 A rule-based chatbot that helps you choose the right programming language for your project.
 
-[![Build](https://img.shields.io/github/actions/workflow/status/aleena-tahir/codepick/ci.yml)](https://github.com/aleena-tahir/codepick/actions)
+[![Build](https://img.shields.io/github/actions/workflow/status/AleenaTahir1/CodePick/ci.yml)](https://github.com/AleenaTahir1/CodePick/actions)
 [![License](https://img.shields.io/badge/license-Source%20Available-blue)](LICENSE.txt)
 
+**[Live Demo](https://aleenatahir1.github.io/CodePick/)**
+
 </div>
-
----
-
-## Why CodePick
-
-Choosing a programming language can be overwhelming, especially when you're starting out or exploring a new domain.
-
-CodePick removes the guesswork. Answer a few quick questions about your project, experience level, and preferences, and get a personalized language recommendation with reasoning and alternatives.
 
 ---
 
@@ -41,32 +35,15 @@ CodePick is an ELIZA-style rule-based chatbot built with React and Tailwind CSS.
 
 ---
 
-## Quick Start
-
-### Using Docker (Recommended)
+## How to Run
 
 ```bash
-git clone https://github.com/aleena-tahir/codepick.git
-cd codepick
+git clone https://github.com/AleenaTahir1/CodePick.git
+cd CodePick
 docker-compose up --build
-# Open browser at http://localhost:3000
 ```
 
-### Local Development
-
-```bash
-git clone https://github.com/aleena-tahir/codepick.git
-cd codepick
-npm install
-npm run dev
-# Open browser at http://localhost:5173
-```
-
-### Build for Production
-
-```bash
-npm run build
-```
+Open **http://localhost:3000** in your browser. That's it!
 
 ---
 
@@ -85,7 +62,7 @@ npm run build
 ## Project Structure
 
 ```
-codepick/
+CodePick/
 ├── src/
 │   ├── components/      — ChatWindow, MessageBubble, InputBar, QuickReplyButtons
 │   ├── engine/          — chatEngine.js, patterns.js, rules.js, responses.js
@@ -103,22 +80,9 @@ codepick/
 
 ---
 
-## Conversation Flow
-
-1. **Use Case** — What do you want to build? (web, mobile, game, data science, automation, embedded, desktop, API/backend)
-2. **Experience Level** — beginner, intermediate, advanced
-3. **Preferences** — performance, ease of learning, job market, community, cross-platform
-4. **Recommendation** — Primary language + alternatives with reasoning
-
----
-
 ## License
 
 This project uses a **Source Available** license. See [LICENSE.txt](LICENSE.txt) for details.
-
-- Free for personal and educational use
-- Free to modify for personal use
-- Commercial use requires permission
 
 ---
 
