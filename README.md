@@ -63,17 +63,13 @@ Open **http://localhost:3000** in your browser. That's it!
 
 ```
 CodePick/
+├── .github/workflows/   — CI/CD pipeline (GitHub Actions)
+├── docker/              — Dockerfile, nginx.conf
+├── public/              — favicon.svg, logo.svg
 ├── src/
 │   ├── components/      — ChatWindow, MessageBubble, InputBar, QuickReplyButtons
-│   ├── engine/          — chatEngine.js, patterns.js, rules.js, responses.js
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-├── public/              — favicon.svg, logo.svg
-├── Dockerfile
-├── docker-compose.yml
-├── nginx.conf
-├── .github/workflows/ci.yml
+│   └── engine/          — chatEngine.js, patterns.js, rules.js, responses.js
+├── docker-compose.yml   — One command to run: docker-compose up --build
 ├── package.json
 └── README.md
 ```
