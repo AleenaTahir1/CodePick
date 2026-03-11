@@ -24,7 +24,7 @@ CodePick is an ELIZA-style rule-based chatbot built with React and Tailwind CSS.
 ---
 
 <div align="center">
-<img src="public/UI.png" alt="CodePick Screenshot" width="500" />
+<img src="public/UI.png" alt="CodePick Screenshot" width="800" />
 </div>
 
 ---
